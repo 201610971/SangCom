@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>상콤</title>
+  <!-- Favicons================================================== -->
+  <link rel="shortcut icon" href="img/ic_sangcom.png">
+  <!-- <link rel="apple-touch-icon" sizes="72x72" href="img/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="img/apple-touch-icon-114x114.png"> -->
+  <!-- Bootstrap -->
+  <link rel="stylesheet" type="text/css"  href="css/bootstrap.css">
+  <link rel="stylesheet" type="text/css" href="fonts/font-awesome/css/font-awesome.css">
+  <!-- Stylesheet================================================== -->
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="css/nivo-lightbox/nivo-lightbox.css">
+  <link rel="stylesheet" type="text/css" href="css/nivo-lightbox/default.css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/login.css">
+  <link rel="stylesheet" type="text/css" href="css/board.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+<!-- Navigation========================================== -->
+  <nav id="menu" class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand page-scroll" href="main.html">SANGCOM</a>
+      </div>
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav navbar-right">
+          <div class="dropdown nav navbar-nav">
+            <li><a href=" boardFree.html" class="page-scroll dropdown">게시판</a>
+              <div class="dropdown-content">
+                <a class="downList" href="#">전교생 자유게시판</a><br>
+                <a class="downList" href="#">1학년 게시판</a><br>
+                <a class="downList" href="#">2학년 게시판</a><br>
+                <a class="downList" href="#">3학년 게시판</a><br>
+              </div>
+            </li>
+          </div>
+          <div class="dropdown nav navbar-nav">
+            <li><a href="#" class="page-scroll dropdown">학생회</a>
+              <div class="dropdown-content">
+                <a class="downList" href="#">학생회</a><br>
+                <a class="downList" href="#">학생 건의함</a><br>
+                <a class="downList" href="#">학생회 공지</a><br>
+                <a class="downList" href="#">동아리 활동</a><br>
+              </div>
+            </li>
+          </div>
+          <div class="dropdown nav navbar-nav">
+            <li><a href="myPage.html" class="page-scroll">마이 페이지</a></li>
+          </div>
+          <div class="dropdown nav navbar-nav">
+            <li><a href="login.html" class="page-scroll">로그아웃</a></li>
+          </div>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- 네비게이션 끝 자유게시판 컨텐츠 시작 -->
+
+  <div class="container">
+    <div class="section-title" style="margin-top: 120px;margin-bottom: 30px !important;">
+      <h2>전교생 자유 게시판</h2>
+    </div>
+    <div style="border: 1px solid black;">
+      <article class="">
+        <div class="margin:10px !important">
+          <b style="margin-bottom: 0px;">익명/2022-01-27</b>
+          <h2 style="border-bottom: 1px solid black;">2월25일 개학</h2>
+          <p class="borderInner" style="position: relative;">
+            실화냐 학교 가기 싫다.
+            <span class="material-symbols-outlined symbols">
+             bookmarkfavorite
+              </span>
+              <span class="symbols" style="right:10px">
+                10
+              </span>
+          </p>
+        </div>
+          <div class="bg-light" id="postComment">
+            <ul id="commentList" style="list-style:none;">
+              <div id="reply">
+                <li>
+                  <textarea name="" id="" cols="120" rows="3"></textarea>
+                  <input type="submit" id="commentAdd" class="btnsmallBlue btnBasic" value="입력" onclick="addChild()">
+                </li>
+                <li class="commentInput" style="position:relative;">
+                  익명/(2022/05/23)<br>
+                    나도 싫어 ㅠㅠ
+                </li>
+              </div>
+             </ul>
+        </div>
+      </article>
+    </div>
+  </div>
+<!-- Footer Section -->
+<div id="footer">
+  <div class="container text-center">
+    <a href="https://sangmyung-agh.sen.hs.kr/" target="_blank"><img src="icon/상명여고.png" alt="X"></a>
+  </div>
+</div>
+<script type="text/javascript" src="js/jquery.1.11.1.js"></script>
+<script type="text/javascript" src="js/bootstrap.js"></script>
+<script type="text/javascript" src="js/SmoothScroll.js"></script>
+<script type="text/javascript" src="js/nivo-lightbox.js"></script>
+<script type="text/javascript" src="js/jqBootstrapValidation.js"></script>
+<script type="text/javascript" src="js/contact_me.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>
