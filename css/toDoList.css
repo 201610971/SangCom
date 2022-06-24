@@ -15,10 +15,10 @@ button {
 
 .list-box {
     width: 100%;
-    margin: 100px auto; /* 위, 아래는 100px / 좌, 우는 중앙으로 정렬 */
+    margin: 65px auto; /* 위, 아래는 100px / 좌, 우는 중앙으로 정렬 */
     border: 1px solid white;
     padding: 20px 30px 50px; /* 위 20 오른쪽, 왼쪽 30 아래 50 */
-    background: pink;
+    background: #87a9ff;
     padding-right: var(--bs-gutter-x, 0.75rem);
     padding-left: var(--bs-gutter-x, 0.75rem);
     margin-right: auto;
@@ -35,9 +35,13 @@ button {
 
 .list-box h1 {
     text-align: center;
-    color: royalblue;
+    color: #0e4deb;
     border-bottom: 1px solid gray;
     padding-bottom: 10px;
+}
+.list-box h5 {
+    text-align: center;
+    color: #0e4deb;
 }
 
 .write-box {

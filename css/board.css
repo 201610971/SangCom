@@ -1,64 +1,12 @@
-/* Style The Dropdown Button */
-.dropbtn {
-  background-color: #4CAF50;
-  color: white;
-  padding: 16px;
-  font-size: 16px;
-  border: none;
-  cursor: pointer;
-}
-
-/* The container <div> - needed to position the dropdown content */
-.dropdown {
-  position: relative;
-  display: inline-block;
-}
-
-/* Dropdown Content (Hidden by Default) */
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f9f9f9;
-  min-width: 160px;
-  /* box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); */
-  z-index: 1;
-}
-
-/* Links inside the dropdown */
-.dropdown-content a li{
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-  
-}
-
-/* Change color of dropdown links on hover */
-.dropdown-content a:hover li:hover{background-color: #f1f1f1}
-
-/* Show the dropdown menu on hover */
-.dropdown:hover .dropdown-content {
-  display: block;
-  
-}
-
-/* Change the background color of the dropdown button when the dropdown content is shown */
-.dropdown:hover .dropbtn {
-  background-color: #3e8e41;
-}
-
-.downList {
-    /* margin: 100px; */
-}
 
 .borderList {
     /* border-left:1px solid black; */
     padding-left:100px;
-    margin-left: -1px !important;
+    margin-left: -1px ;
      min-width: 500px;
      margin-left: 100px;
      margin-top: 20px;
-     
+
  }
 
   .borderContent {
@@ -71,24 +19,32 @@
     margin-top: 20px;
     margin-left: 100px;
  }
- 
+
  .commentInput {
     min-width : 480px;
-    margin-left: 20px !important;
+    margin-left: 20px ;
     margin-bottom: 10px;
  }
 
 .commentList{
-   padding-left: 20px !important;
+   padding-left: 20px ;
 }
 
- 
+
  .post{
      padding: 10px;
      margin: 5px;
      border: 1px solid gray;
      min-width: 550px;
      min-height: 100px;
+ }
+ .post_auto{
+     padding: auto;
+     margin: auto;
+     border: 1px solid #0fb3ff;
+     border-radius: 10px;
+     min-width: auto;
+     min-height: auto;
  }
 
  .post .bottom {
@@ -98,8 +54,8 @@
 
  .commentBtn{
     border: none;
-    background-color: rgba(var(--bs-light-rgb), var(--bs-bg-opacity)) !important;
-    
+    background-color: rgba(var(--bs-light-rgb), var(--bs-bg-opacity)) ;
+
  }
 
  @media (min-width:1200px) {
@@ -108,7 +64,7 @@
     }
 
     .borderContent {
-        
+
         border: 3px solid aquamarine;
      }
   }
@@ -144,7 +100,7 @@
     border: 2px solid black;
     min-width: 500px;
     min-height: 200px;
-    
+
   }
 
 

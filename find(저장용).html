@@ -17,8 +17,8 @@
   <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="css/login.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-</head>
 
+</head>
 <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
   <nav id="menu" class="navbar navbar-default navbar-fixed-top">
     <div class="container">
@@ -31,12 +31,14 @@
         </button>
         <a class="navbar-brand page-scroll" href="login.html">SANGCOM</a>
       </div>
+      <!-- Collect the nav links, forms, and other content for toggling -->
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
         <ul class="nav navbar-nav navbar-right">
           <li><a href="register.html" class="page-scroll">회원가입</a></li>
-          <li><a href="find.html" class="page-scroll">아이디/비밀번호 찾기</a></li>
+          <li><a href="#" class="page-scroll">아이디/비밀번호 찾기</a></li>
         </ul>
       </div>
+      <!-- /.navbar-collapse -->
     </div>
   </nav>
   <!-- 네비게이션 끝 자유게시판 컨텐츠 시작 -->
@@ -53,39 +55,14 @@
     </div>
   </div> -->
   <!-- 계정을 페이스북이나 트위터, 구글, 유튜브? 로 찾는 기능 -->
-  <!-- 로그인  -->
-  <div id="login">
-    <img src="icon/ic_cloudy-playstore.png" class="" alt="no" style="max-width:250px">
-    <div class="container" style="max-width: 700px; margin-top: 50px;">
-      <div class="section-title" >
-        <form class="loginBox" action="index.html" id="loginForm" method="get">
-          <!-- <h1 style="margin: 10px;"></h1> -->
-          <h2>로그인</h2>
-          <!-- <input class="loginbord" type="text" name = "id" id ="id" value="" required autocomplete="off"> -->
-          <label class="field field_v3" for="api/DB/userID">
-            <input class="field__input" placeholder="ex)asd123" required id="api/DB/userID">
-            <span class="field__label-wrap">
-              <span class="field__label">ID 입력</span>
-            </span>
-          </label>
-          <label class="field field_v3" for="api/DB/userPW">
-            <input class="field__input" placeholder=" " required id="api/DB/userPW">
-            <span class="field__label-wrap">
-                <span class="field__label">비밀번호 입력</span>
-              </span>
-          </label>
-          <div style="margin: 10px;">
-          <input class="btn" id="loginBtn" style="width: 300px; background: cornflowerblue; color: white;" type="submit" name="login" value="로그인" onclick="loginBtn()"><br>
-          </div>
+  <!-- 아이디 찾기  -->
 
-          <div style="margin: 15px;">
-          <a href="register.html"><input type="button" value="회원가입" class="btn"></a>&nbsp;&nbsp;&nbsp;
-          <a href="find.html"><input type="button" value="ID/PW찾기" class="btn"></a>
-          </div>
-        </form>
-      </div>
+    <div class="section-title" style="display: flex; margin: auto;">
+      <a href="findID.html"><button class="classicButton" style="align-items: center">아이디 찾기</button></a>
+      <a href="findPW.html"><button class="classicButton" style="align-items: center">비밀번호 찾기</button></a>
     </div>
-  </div>
+
+
 <!-- Footer Section -->
 <div id="footer">
   <div class="container text-center">
