@@ -66,18 +66,57 @@
   </nav>
   <!-- 네비게이션 끝 자유게시판 컨텐츠 시작 -->
 
-  <!-- 오늘의 메뉴 -->
-  <div class="container" style="margin-top: 120px; margin-bottom: 30px; display: flex; flex-wrap: wrap; align-items: center">
-    <div class="mainBorder list-box" style="width: 20%; min-width: 210px; padding:5px; margin-bottom: auto;">
-      <h1>오늘의 메뉴</h1>
-      <h5>현미밥</h5>
-      <h5>소고기뭇국</h5>
-      <h5>김치</h5>
-      <h5>닭강정</h5>
-      <h5>피크닉</h5>
-      <div class="" style="margin: auto">
-        <a href="#" role="button" class="" id="" onclick="" style="text-align: left;"><span class="">👈(어제)</span></a><span> / </span>
-        <a href="#" role="button" class="" id="" onclick="" style="text-align: right;"><span class="">(내일)👉</span></a>
+
+  <div class="container" style="margin-top: 120px; margin-bottom: 30px; display: flex; flex-wrap: wrap; align-items: center; flex-direction: row-reverse;">
+    <!-- 내정보 -->
+    <div style="width: 30%;min-width: 310px; margin-bottom: auto;  margin-top: 1%">
+      <div>
+        <div id="userIdent" class="mainBorder" style="padding:40px;">
+          <img src="img/ic_cloudy.png" width = "70" style="float: left">
+          <p class="nickname">상콤달콤</p>
+          <p class="school">김경은</p>
+          <p class="school">1학년 2반 34번</p>
+          <div style="margin: auto">
+            <!-- <a href="  #"><input class="mainBtn" type="button" value="알림"></a> -->
+            <!-- <a href="mypage.html"><input class="mainBtn" type="button" value="내 정보"></a> -->
+            <!-- <a href="mypage.html"><input class="mainBtn" type="button" value="로그아웃"></a> -->
+            <button class="mainBtn"><a href="#">알림</a></button>
+            <button class="mainBtn"><a href="myPage.html">내 정보</a></button>
+            <button class="mainBtn"><a href="login.html">로그아웃</a></button>
+          </div>
+        </div>
+      </div>
+      <div class="list-box mainBorder" style="padding:10%;">
+        <h1>To Do List</h1>
+        <div class="write-box">
+          <input type="text" class="text-basic">
+          <button type="button" id="btnAdd">추가</button>
+        </div>
+
+        <table class="list-table">
+          <colgroup>
+            <!-- column을 1:9로 나눔 -->
+            <col width="30%">
+            <col width="70%">
+          </colgroup>
+          <thead>
+            <tr>
+              <th>확인</th>
+              <th>할 일</th>
+            </tr>
+          </thead>
+          <tbody id="listBody">
+          </tbody>
+        </table>
+
+
+        <div class="btn-area">
+          <!-- 삭제 기능 -->
+
+          <button type="buton" id="DeleteSel">선택 삭제</button>
+          <button type="buton" id="btnDelLast">마지막 항목 삭제</button>
+          <button type="buton" id="btnDelAll">전체 삭제</button>
+        </div>
       </div>
     </div>
     <!--게시글 -->
@@ -94,7 +133,7 @@
               <span class="symbols" style="right:10px">50</span>
             </article>
           </a>
-          <a href="boardContent.html">
+          <a href="boardContent0.html">
             <article class="post_auto" style="position: relative;">
               <h5 class="postName">진짜 김경은은 전설이다</h5>
               <p class="postContent">그 찐따같던 김경은이 맞다</p>
@@ -222,56 +261,17 @@
       </div>
     </div>
     <!-- 시간표 끝 -->
-
-    <!-- 내정보 -->
-    <div style="width: 30%;min-width: 310px; margin-bottom: auto;  margin-top: 1%">
-      <div>
-        <div id="userIdent" class="mainBorder" style="padding:40px;">
-          <img src="img/ic_cloudy.png" width = "70" style="float: left">
-          <p class="nickname">상콤달콤</p>
-          <p class="school">김경은</p>
-          <p class="school">1학년 2반 34번</p>
-          <div style="margin: auto">
-            <!-- <a href="  #"><input class="mainBtn" type="button" value="알림"></a> -->
-            <!-- <a href="mypage.html"><input class="mainBtn" type="button" value="내 정보"></a> -->
-            <!-- <a href="mypage.html"><input class="mainBtn" type="button" value="로그아웃"></a> -->
-            <button class="mainBtn"><a href="#">알림</a></button>
-            <button class="mainBtn"><a href="myPage.html">내 정보</a></button>
-            <button class="mainBtn"><a href="login.html">로그아웃</a></button>
-          </div>
-        </div>
-      </div>
-      <div class="list-box mainBorder" style="padding:10%;">
-        <h1>To Do List</h1>
-        <div class="write-box">
-          <input type="text" class="text-basic">
-          <button type="button" id="btnAdd">추가</button>
-        </div>
-
-        <table class="list-table">
-          <colgroup>
-            <!-- column을 1:9로 나눔 -->
-            <col width="30%">
-            <col width="70%">
-          </colgroup>
-          <thead>
-            <tr>
-              <th>확인</th>
-              <th>할 일</th>
-            </tr>
-          </thead>
-          <tbody id="listBody">
-          </tbody>
-        </table>
-
-        
-        <div class="btn-area">
-          <!-- 삭제 기능 -->
-         
-          <button type="buton" id="DeleteSel">선택 삭제</button>
-          <button type="buton" id="btnDelLast">마지막 항목 삭제</button>
-          <button type="buton" id="btnDelAll">전체 삭제</button>
-        </div>
+    <!-- 오늘의 메뉴 -->
+    <div class="mainBorder list-box" style="width: 20%; min-width: 210px; padding:5px; margin-bottom: auto;">
+      <h1>오늘의 메뉴</h1>
+      <h5>현미밥</h5>
+      <h5>소고기뭇국</h5>
+      <h5>김치</h5>
+      <h5>닭강정</h5>
+      <h5>피크닉</h5>
+      <div class="" style="margin: auto">
+        <a href="#" role="button" class="" id="" onclick="" style="text-align: left;"><span class="">👈(어제)</span></a><span> / </span>
+        <a href="#" role="button" class="" id="" onclick="" style="text-align: right;"><span class="">(내일)👉</span></a>
       </div>
     </div>
   </div>
