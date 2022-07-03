@@ -7,10 +7,30 @@
 	margin-bottom: 15px;
 }
 
-/* #loginBtn {
-    background-color: rgb(143, 143, 225);
-    color: aqua;
-}   */
+.loginBtn {
+  margin: 20px;
+  font-size: 1.7rem;
+  width: 100%;
+  max-width: 230px; 
+  border:none;
+  padding: 5px;
+  background: cornflowerblue; 
+  color: white;
+  border-radius: 4px;
+}
+
+.loginBtn2 {
+  width:48% !important; 
+  font-size: 1.7rem;
+  margin: 5px;
+  max-width: 120px !important; 
+  min-width: 83px !important;
+  border: none;
+  padding: 5px;
+  background: cornflowerblue; 
+  color: white;
+  border-radius: 4px;
+}
 
 .loginbord , .loginBox {
     border: 1px solid rgb(28, 149, 214);
@@ -22,6 +42,15 @@
 .loginLabel {
     /* display: none; */
     float: none;
+}
+
+@media (max-width: 320px){
+
+  .loginBtn {
+    max-width: 100px;
+    margin: 0px;
+  }
+  
 }
 
 .field__input{
@@ -271,7 +300,3 @@
       float:inherit;
   }
 
-  .loginBtn {
-    margin: 20px;
-    font-size: 20px;
-  }

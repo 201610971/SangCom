@@ -508,8 +508,11 @@ color: #777;
 	color: #e52f3c;
 }
 
+
+
 @media (max-width: 768px) {
 #about img {
 	margin: 50px 0;
 }
 }
+

@@ -9,7 +9,7 @@ button {
     font-family: 'Gamja Flower', 'cursive';
     background: cornflowerblue;
     color: white;
-    font-size: 18px;
+    font-size: 1.7rem;
     cursor: pointer;
 }
 
@@ -18,7 +18,7 @@ button {
     margin: 65px auto; /* 위, 아래는 100px / 좌, 우는 중앙으로 정렬 */
     border: 1px solid white;
     padding: 20px 30px 50px; /* 위 20 오른쪽, 왼쪽 30 아래 50 */
-    background: #87a9ff;
+    background: #e3ffff;
     padding-right: var(--bs-gutter-x, 0.75rem);
     padding-left: var(--bs-gutter-x, 0.75rem);
     margin-right: auto;
@@ -98,7 +98,35 @@ tbody td:first-child {
     height: 35px;
     padding: 0 10px;
     border: none;
+    
 }
 #btnDelLast {
   display : none;
 }
+
+
+.mainBorder {
+    border: 2px solid #819fea; 
+    background-color: #e3ffff; 
+    border-radius: 10px;
+}
+
+
+.mainBtn {
+    border:none;
+    padding: 5px;
+    background: cornflowerblue; 
+    color: white;
+    border-radius: 4px;
+  }
+
+.hotPost{
+    width: 50%; 
+    min-width: 400px; 
+    padding:10px; 
+    margin-bottom: auto;
+}
+
+/* #userIdent .mainBtn {
+    width:30%;
+} */
