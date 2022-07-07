@@ -116,9 +116,12 @@ tbody td:first-child {
     border:none;
     padding: 5px;
     background: cornflowerblue; 
-    color: white;
     border-radius: 4px;
   }
+
+.mainBtn a {
+    color: white !important;
+}
 
 .hotPost{
     width: 50%; 
@@ -130,3 +133,11 @@ tbody td:first-child {
 /* #userIdent .mainBtn {
     width:30%;
 } */
+
+.lunchBox {
+    margin-top: 150px; 
+    margin-bottom: 30px; 
+    display: flex; 
+    flex-wrap: wrap; 
+    align-items: center
+}
