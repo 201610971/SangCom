@@ -111,6 +111,20 @@ tbody td:first-child {
     border-radius: 10px;
 }
 
+.mainBorder h2 , .mainBorder h3 {
+    text-align: center;
+}
+
+.reportBox {
+    min-width: 450px !important;
+    min-height: 450px;
+    padding : 100px !important;
+    
+}
+
+.reportSelect {
+    text-align:center; margin-bottom: 10px;
+}
 
 .mainBtn {
     border:none;

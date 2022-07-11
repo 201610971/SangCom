@@ -75,3 +75,16 @@ function createBoard() {
     var target = document.getElementById('boardCreate');
     target.insertAdjacentHTML('beforeend',"no");
 }
+
+
+function removeContent() {
+  
+  
+  if(confirm("삭제하시겠습니까?")){
+    alert("삭제되었습니다.");
+    location.href = "main.html"
+  }
+  else {
+    alert("취소되었습니다.");
+  }
+}

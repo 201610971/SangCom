@@ -37,7 +37,11 @@ p.intro {
 	line-height: 24px;
 }
 a {
+<<<<<<< Updated upstream
 	color: #000000;
+=======
+	color: #0a0909;
+>>>>>>> Stashed changes
 	font-weight: 400;
 }
 a:hover, a:focus {
@@ -525,4 +529,25 @@ color: #777;
 	border-radius: 10px;
 	min-height: 250px;
 	text-align: center;
+}
+
+.report {
+	display: inline-block;
+	padding: 6px 12px;
+	margin-bottom: 0;
+	font-size: 14px;
+	font-weight: normal;
+	line-height: 1.42857143;
+	text-align: center;
+	white-space: nowrap;
+	vertical-align: middle;
+	-ms-touch-action: manipulation;
+		touch-action: manipulation;
+	cursor: pointer;
+	-webkit-user-select: none;
+	   -moz-user-select: none;
+		-ms-user-select: none;
+			user-select: none;
+	border: 1px solid transparent;
+	border-radius: 4px;
 }
