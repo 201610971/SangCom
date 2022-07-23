@@ -11,7 +11,7 @@
   margin: 20px;
   font-size: 1.7rem;
   width: 100%;
-  max-width: 230px; 
+  max-width: 250px; 
   border:none;
   padding: 5px;
   background: cornflowerblue; 
@@ -20,7 +20,7 @@
 }
 
 .loginBtn2 {
-  width:48% !important; 
+  width: 300px !important;
   font-size: 1.7rem;
   margin: 5px;
   max-width: 120px !important; 

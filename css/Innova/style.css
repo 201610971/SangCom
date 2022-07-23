@@ -2,14 +2,14 @@ body, html {
 	font-family: 'Open Sans', sans-serif;
 	text-rendering: optimizeLegibility !important;
 	-webkit-font-smoothing: antialiased !important;
-	color: #666;
+	color: #333;
 	font-weight: 400;
 	width: 100% !important;
 	height: 100% !important;
 }
 h2 {
 	font-family: 'Montserrat', sans-serif;
-	margin: 0 0 20px 0;
+
 	font-weight: 700;
 	font-size: 32px;
 	color: #333;
@@ -38,7 +38,11 @@ p.intro {
 }
 a {
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 	color: #000000;
+=======
+	color: #0a0909;
+>>>>>>> Stashed changes
 =======
 	color: #0a0909;
 >>>>>>> Stashed changes
@@ -125,7 +129,9 @@ hr {
 	background-color: #1b6d3f;
 }
 .section-title {
-	margin-bottom: 70px;
+	margin: auto;
+	margin-top: 30px;
+	
 }
 .section-title h2 {
 	position: relative;
@@ -518,9 +524,8 @@ color: #777;
 }
 }
 
-.bluePrint {
+.myPageAk {
 	font-size:1.7rem !important; 
-	color: blue !important;
 }
 
 .mypageTitle {
@@ -531,6 +536,13 @@ color: #777;
 	text-align: center;
 }
 
+<<<<<<< Updated upstream
+=======
+.bluePrint {
+	color: #442ded;
+}
+
+>>>>>>> Stashed changes
 .report {
 	display: inline-block;
 	padding: 6px 12px;

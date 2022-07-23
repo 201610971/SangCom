@@ -14,7 +14,7 @@ button {
 }
 
 .list-box {
-    width: 100%;
+    /* width: 100%; */
     margin: 65px auto; /* 위, 아래는 100px / 좌, 우는 중앙으로 정렬 */
     border: 1px solid white;
     padding: 20px 30px 50px; /* 위 20 오른쪽, 왼쪽 30 아래 50 */
@@ -109,6 +109,8 @@ tbody td:first-child {
     border: 2px solid #819fea; 
     background-color: #e3ffff; 
     border-radius: 10px;
+    margin: 15px;
+
 }
 
 .mainBorder h2 , .mainBorder h3 {
@@ -138,10 +140,12 @@ tbody td:first-child {
 }
 
 .hotPost{
-    width: 50%; 
+    width: 47%; 
     min-width: 400px; 
     padding:10px; 
+    /* margin : 10px; */
     margin-bottom: auto;
+    margin: auto;
 }
 
 /* #userIdent .mainBtn {
